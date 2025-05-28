@@ -1,0 +1,38 @@
+@RELATION zoo_train_realistic
+
+@ATTRIBUTE animal STRING
+@ATTRIBUTE hair {true,false}
+@ATTRIBUTE feathers {true,false}
+@ATTRIBUTE eggs {true,false}
+@ATTRIBUTE milk {true,false}
+@ATTRIBUTE airborne {true,false}
+@ATTRIBUTE aquatic {true,false}
+@ATTRIBUTE predator {true,false}
+@ATTRIBUTE toothed {true,false}
+@ATTRIBUTE backbone {true,false}
+@ATTRIBUTE breathes {true,false}
+@ATTRIBUTE venomous {true,false}
+@ATTRIBUTE fins {true,false}
+@ATTRIBUTE legs NUMERIC
+@ATTRIBUTE tail {true,false}
+@ATTRIBUTE domestic {true,false}
+@ATTRIBUTE catsize {true,false}
+@ATTRIBUTE type {mammal,bird,reptile,fish,amphibian,insect,invertebrate}
+
+@DATA
+bison,true,false,false,true,false,false,true,true,true,true,false,false,4,true,false,true,mammal
+goat,true,false,false,true,false,false,false,true,true,true,false,false,4,true,true,false,mammal
+dog,true,false,false,true,false,false,true,true,true,true,false,false,4,true,true,true,mammal
+eagle,false,true,true,false,true,false,true,true,true,true,false,false,2,true,false,true,bird
+owl,false,true,true,false,true,false,true,true,true,true,false,false,2,true,false,false,bird
+duck,false,true,true,false,true,true,false,false,true,true,false,false,2,true,false,false,bird
+gecko,false,false,true,false,false,false,false,true,true,true,false,false,4,true,false,false,reptile
+chameleon,false,false,true,false,false,false,false,true,true,true,false,false,4,true,false,false,reptile
+salmon,false,false,true,false,false,true,false,true,true,false,false,true,0,true,false,false,fish
+tuna,false,false,true,false,false,true,true,true,true,false,false,true,0,true,false,false,fish
+newt,false,false,true,false,false,true,false,true,true,false,false,false,4,true,false,false,amphibian
+toad,false,false,true,false,false,true,false,true,true,false,false,false,4,true,false,false,amphibian
+wasp,false,false,true,false,true,false,true,false,false,false,true,false,6,true,false,false,insect
+grasshopper,false,false,true,false,true,false,false,false,false,false,false,false,6,true,false,false,insect
+crab,false,false,true,false,false,true,true,false,false,false,false,false,8,true,false,false,invertebrate
+starfish,false,false,true,false,false,true,false,false,false,false,false,false,5,true,false,false,invertebrate

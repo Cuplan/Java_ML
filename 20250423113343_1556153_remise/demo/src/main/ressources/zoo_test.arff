@@ -1,0 +1,45 @@
+@RELATION zoo_realistic
+
+@ATTRIBUTE animal STRING
+@ATTRIBUTE hair {true,false}
+@ATTRIBUTE feathers {true,false}
+@ATTRIBUTE eggs {true,false}
+@ATTRIBUTE milk {true,false}
+@ATTRIBUTE airborne {true,false}
+@ATTRIBUTE aquatic {true,false}
+@ATTRIBUTE predator {true,false}
+@ATTRIBUTE toothed {true,false}
+@ATTRIBUTE backbone {true,false}
+@ATTRIBUTE breathes {true,false}
+@ATTRIBUTE venomous {true,false}
+@ATTRIBUTE fins {true,false}
+@ATTRIBUTE legs NUMERIC
+@ATTRIBUTE tail {true,false}
+@ATTRIBUTE domestic {true,false}
+@ATTRIBUTE catsize {true,false}
+@ATTRIBUTE type {mammal,bird,reptile,fish,amphibian,insect,invertebrate}
+
+@DATA
+alpaca,true,false,false,true,false,false,false,true,true,true,false,false,4,true,true,false,mammal
+elephant,true,false,false,true,false,false,false,true,true,true,false,false,4,true,false,false,mammal
+tiger,true,false,false,true,false,false,true,true,true,true,false,false,4,true,false,true,mammal
+bat,true,false,false,true,true,false,false,true,true,true,false,false,2,true,false,false,mammal
+cat,true,false,false,true,false,false,true,true,true,true,false,false,4,true,true,true,mammal
+falcon,false,true,true,false,true,false,true,true,true,true,false,false,2,true,false,true,bird
+parrot,false,true,true,false,true,false,false,false,true,true,false,false,2,true,true,false,bird
+penguin,false,true,true,false,false,true,false,false,true,true,false,false,2,true,false,false,bird
+swan,false,true,true,false,true,true,false,false,true,true,false,false,2,true,false,false,bird
+iguana,false,false,true,false,false,false,false,true,true,true,false,false,4,true,false,false,reptile
+cobra,false,false,true,false,false,false,true,true,true,true,true,false,0,true,false,false,reptile
+turtle,false,false,true,false,false,true,false,true,true,true,false,false,4,true,false,false,reptile
+goldfish,false,false,true,false,false,true,false,true,true,false,false,true,0,true,false,false,fish
+shark,false,false,true,false,false,true,true,true,true,false,false,true,0,true,false,true,fish
+ray,false,false,true,false,false,true,true,true,true,false,false,true,0,true,false,false,fish
+frog,false,false,true,false,false,true,false,true,true,false,false,false,4,true,false,false,amphibian
+salamander,false,false,true,false,false,true,false,true,true,false,false,false,4,true,false,false,amphibian
+bee,false,false,true,false,true,false,false,false,false,false,true,false,6,true,false,false,insect
+butterfly,false,false,true,false,true,false,false,false,false,false,false,false,6,true,false,false,insect
+ant,false,false,true,false,false,false,false,false,false,false,false,false,6,false,false,false,insect
+octopus,false,false,true,false,false,true,true,false,false,false,false,false,8,true,false,false,invertebrate
+snail,false,false,true,false,false,false,false,false,false,false,false,false,0,true,false,false,invertebrate
+jellyfish,false,false,true,false,false,true,true,false,false,false,true,false,0,true,false,false,invertebrate
