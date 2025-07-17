@@ -40,16 +40,6 @@ This project demonstrates how to use the Weka library in Java to build, evaluate
 └── README.md # You are here!
 
 ---
-
-## 🚀 How to run the project
-
-1. Make sure you have **Java 17+** and **Maven** installed.
-2. Compile the project:
-```bash
-mvn compile
-training: mvn exec:java -Dexec.mainClass="com.example.WekaMonZoo"
-predictor: mvn exec:java -Dexec.mainClass="com.example.WekaPredictInteractive"
- 
  ## ✨ Features
 
 - [x] Load `.arff` datasets using Weka's DataSource
@@ -59,3 +49,14 @@ predictor: mvn exec:java -Dexec.mainClass="com.example.WekaPredictInteractive"
 - [x] Save trained model to disk (`.model`)
 - [x] Interactive console prediction (user input via CLI)
 - [x] Print stats per attribute or prediction analysis
+
+## 🚀 How to run the project
+
+1. Make sure you have **Java 17+** and **Maven** installed.
+2. Compile the project:
+```bash
+mvn compile
+mvn exec:java -Dexec.mainClass="com.example.WekaMonZoo"
+ mvn exec:java -Dexec.mainClass="com.example.WekaPredictInteractive"
+ 
+
